@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./img/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Old+Standard+TT:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@600&display=swap" rel="stylesheet">
+    <title>The COVID-19 Issues | TLT</title>
+</head>
+<body>
+    <!-- This table holds logo, website name and a moto, here I use the rowspan to make space for the logo -->
+    <table>
+        <tr>
+            <td rowspan="2"><img id="logo" src="./img/logo.png" alt="logo" width="100" height="100"></td>
+            <td><h1 align="center">The Local Tales</h1></td>
+        </tr>
+        <tr>
+            <td><p class="moto" align="center">where your journeys begin</p></td>
+        </tr>
+    </table>  
+    <!-- This div contains buttons that lead to another HTMLs -->
+    <div id="nav-link">
+        <button onclick="window.location.href='/index.html'">Homepage</button>
+        <button onclick="window.location.href='/form.html'">Visitor Form</button>
+    </div>
+    <!-- A COVID-19 cases table -->
+    <table class="cases" cellpadding="4">
+        <tr>
+            <td><b> Infected Case|</b></td>
+            <td><b>New Cases|</b></td>
+            <td><b>Dead</b></td>
+        </tr>
+        <tr>
+            <td>6.304</td>
+            <td>+89</td>
+            <td>71</td>
+        </tr>
+    </table>
+    <!-- Some information about the virus and the new normal in the local area -->
+    <h1 class="anounce-covid">What is COVID-19?</h1>
+    <p class="anounce-covid">Coronavirus disease 2019 (COVID-19) is a contagious disease caused by severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2). The first known case was identified in Wuhan, China, in December 2019. The disease has since spread worldwide, leading to an ongoing pandemic.</p>
+    <p align="center"><img class="image" src="./img/what-is-covid.png" alt="covid infographic" width="50%"></p>
+    <p class="anounce-covid">COVID-19 is spread through the air when droplets and minute airborne particles harboring the virus are inhaled. Breathing them in is most dangerous when individuals are close together, but they can also be inhaled over greater distances, especially indoors. Transmission can also occur if contaminated fluids are splashed or sprayed in the eyes, nose, or mouth, as well as via contaminated surfaces. People can be contagious for up to 20 days after contracting the virus, and they can spread it even if they don't show any symptoms.</p>
+    <p align="center"><img class="image" src="./img/habits.jpg" alt="new norms" width="50%"></p>
+    <p class="anounce-covid">In Vietnam, there're been a lot of cases in just some months ago. The Government and local people are together coming through this pandemic</p>
+    <p class="anounce-covid"><b>Due to the COVID-19 situations, all Rach Gia citizens and visitors now will have to wear face mask and sanitize your hands when going outside as soon as possible.</b> <br>
+    If you are seeking for help or simply have questions, please go to the Visitor Enquiry Form located in the top "Visitor Form" button. Safe travelling!</p>
+</body>
+</html>

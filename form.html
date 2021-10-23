@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/icons/clipboard.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Old+Standard+TT:ital@0;1&display=swap" rel="stylesheet">
+    <title>Visitor's Enquiry Form | TLT</title>
+    <script src="./getContent.js"></script>
+</head>
+<body>
+    <!-- This table holds logo, website name and a moto, here I use the rowspan to make space for the logo -->
+    <table>
+        <tr>
+            <td rowspan="2"><img id="logo" src="./img/logo.png" alt="logo" width="100" height="100"></td>
+            <td><h1 align="center">The Local Tales</h1></td>
+        </tr>
+        <tr>
+            <td><p class="moto" align="center">where your journeys begin</p></td>
+        </tr>
+    </table>  
+    <!-- This div contains buttons that lead to another HTMLs -->
+    <div id="nav-link">
+        <button onclick="window.location.href='/index.html'">Homepage</button>
+        <button onclick="window.location.href='/covid.html'">COVID-19</button>
+    </div>
+    <br>
+    <!-- A form that has input for visitor's personal information -->
+    <form>
+        <div align="center">
+            <h1 class="title">Visitor Form 📰</h1>
+            <table class="vform">
+                <tr>
+                    <td class="td-form"><label for="fullname">Your Full Name:</label></td>
+                    <td class="td-form"><input type="text" name="fullname" id="fullname" placeholder="Your full name" ></td>
+                </tr>
+                <tr>
+                    <td class="td-form"><label for="email">Your E-mail Address:</label></td>
+                    <td class="td-form"><input type="email" name="email" id="email" placeholder="yourname@example.com"></td>
+                </tr>
+                <tr>
+                    <td class="td-form"><label for="birthday">Date of Birth:</label></td>
+                    <td class="td-form"><input type="date" name="birthday" id="birthday"></td>
+                </tr>
+                <tr>
+                    <td class="td-form"><label for="gender">Gender:</label></td>
+                    <td class="td-form"><input type="radio" name="gender" id="male" value="Male">
+                        <label for="Male">Male</label>
+                        <input type="radio" name="gender" id="female" value="Female">
+                        <label for="Female">Female</label>
+                        <input type="radio" name="gender" id="other" value="Other">
+                        <label for="Other">Other</label></td>
+                </tr>
+                <tr>
+                    <td class="td-form"><label for="phone">Your Phone Number:</label></td>
+                    <td class="td-form"><input type="tel" name="phone" id="phone" placeholder="(555)-4321-6789"></td>
+                </tr>
+                <tr>
+                    <td class="td-form"><label for="arrivalday">Your Arrival Day: </label></td>
+                    <td class="td-form"><input type="date" name="arrivalday" id="arrivalday"  max="today"></td>
+                </tr>
+                <tr>
+                    <td class="td-form"><label for="location">Location:</label></td>
+                    <td class="td-form">
+                        <select name="location" id="location">
+                            <option value="">Select your location</option>
+                            <option value="Hoa Binh Resort">Hoa Binh Resort</option>
+                            <option value="Kien Giang Museum">Kien Giang Museum</option>
+                            <option value="Phu Cuong Urban Area">Phu Cuong Urban Area</option>
+                            <option value="Rach Gia Pier">Rach Gia Pier</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td-form"><label for="enquiry">Your Enquiry:</label></td>
+                    <td class="td-form"><textarea name="enquiry" id="enquiry" cols="30" rows="10" placeholder="Please type your enquiry here:"></textarea></td>
+                </tr>
+            </table>
+            <input type="submit" value="Submit" onclick="getData()">
+            <input type="reset" value="Reset"> <br> <br>
+            <a href="index.html"><input type="button" value="Back to Homepage"></a>
+        </div>
+    </form>
+</body>
+</html>
